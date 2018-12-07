@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Navigation Bar 2</title>
+  <meta charset="utf-8">
+  <style media="screen">
+  body{
+    background-color: #22C022;
+  }
+  nav {
+  background: #444;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+}
+  nav ul li:hover {
+      background: #AC04BF;
+  }
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 12px;
+}
+  nav ul li a:hover {
+      color: #fff;
+      text-decoration: none;
+  }
+
+  nav ul li.parent ul.child {
+    display: none;
+}
+nav ul li.parent:hover ul.child {
+    display: block;
+    position: absolute;
+    top: 40px;
+    background: #AC04BF;
+}
+
+nav ul li.parent ul.child li {
+    width: 9em;
+    padding: 0;
+}
+nav ul li.parent ul.child li:hover {
+    background: #008FBA;
+}
+nav ul li.parent ul.child li a {
+    display: block;
+}
+
+#sub{
+  text-transform: none;
+}
+  </style>
+  </head>
+  <body>
+    <nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li class="parent"><a href="#">Services</a>
+      <ul class="child" id="sub">
+        <li ><a href="#">Web Design</a></li>
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">Web Hosting</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+  </body>
+</html>

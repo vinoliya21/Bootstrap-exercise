@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dropdown</title>
+ <style>
+	.dropbtn {
+    background-color: #a0761e;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f5d2d0;
+	border-top:3px solid #d0362e;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #d0362e;
+}
+ </style>
+</head>
+<body>
+	<div class="dropdown">
+  <button class="dropbtn">Button Dropdown Menu <img src="down.png" width="30px" align="right"></button>
+  <div class="dropdown-content">
+    <a href="#">Home</a>
+    <a href="#">Bootstrap</a>
+    <a href="#">jQuery</a>
+	<a href="#">jQuery UI</a>
+	<a href="#">PHP</a>
+  </div>
+</div>
+</body>
+</html>
